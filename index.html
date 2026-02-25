@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hyperion Defense Industries — a professional Star Citizen organization built on professionalism, coordination, and long-term vision. Join HDI in the Verse." />
+  <meta property="og:title" content="Hyperion Defense Industries" />
+  <meta property="og:description" content="Built on professionalism, coordination, and long-term vision. Strength in combat. Opportunity in enterprise." />
+  <meta property="og:type" content="website" />
+  <title>Hyperion Defense Industries | Built for the Verse</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="container">
+
+      <a href="index.html" class="navbar-brand" aria-label="Hyperion Defense Industries Home">
+        <div class="brand-icon">
+          <svg width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5"
+                     stroke="#00c8e8" stroke-width="1.6" fill="rgba(0,200,232,0.07)"/>
+            <polygon points="20,9 29,14 29,26 20,31 11,26 11,14"
+                     stroke="#00c8e8" stroke-width="0.8" fill="none" opacity="0.45"/>
+            <text x="20" y="25" text-anchor="middle"
+                  fill="#00c8e8" font-family="Orbitron,sans-serif"
+                  font-size="13" font-weight="700" letter-spacing="1">H</text>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-main">HYPERION</span>
+          <span class="brand-sub">DEFENSE INDUSTRIES</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#hero"       class="nav-link">Home</a></li>
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#operations" class="nav-link">Operations</a></li>
+        <li><a href="#community"  class="nav-link">Community</a></li>
+        <li><a href="#contact"    class="nav-link nav-cta">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-mobile-overlay" role="navigation" aria-label="Mobile navigation">
+    <a href="#hero"       class="nav-link">Home</a>
+    <a href="#about"      class="nav-link">About</a>
+    <a href="#operations" class="nav-link">Operations</a>
+    <a href="#community"  class="nav-link">Community</a>
+    <a href="#contact"    class="nav-link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-label="Hero">
+      <canvas id="starfield" aria-hidden="true"></canvas>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-grid"   aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>STAR CITIZEN ORGANIZATION</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="title-line">HYPERION</span>
+          <span class="title-line accent">DEFENSE</span>
+          <span class="title-line">INDUSTRIES</span>
+        </h1>
+
+        <p class="hero-tagline">
+          Built on professionalism, coordination, and long-term vision — HDI brings
+          together pilots, operators, and specialists to forge strength in combat
+          and opportunity in enterprise.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://discord.gg/hyperiondi" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fab fa-discord"></i> Join the Fleet
+          </a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Organization details">
+          <div class="stat">
+            <span class="stat-value mono">ACTIVE</span>
+            <span class="stat-label">Status</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value mono">UEE</span>
+            <span class="stat-label">Jurisdiction</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value mono">ARC18</span>
+            <span class="stat-label">Home Port</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value mono">STANTON</span>
+            <span class="stat-label">System</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span class="mono">SCROLL</span>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════════════════════ -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">// ABOUT HDI</span>
+          <h2 class="section-title">Who We Are</h2>
+          <div class="title-decoration"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead">
+              Hyperion Defense Industries is a professional Star Citizen organization united
+              by a common mission: to operate with the highest standard of discipline,
+              coordination, and strategic focus in everything we do.
+            </p>
+            <p>
+              We bring together pilots, operators, and specialists who share a commitment
+              to excellence. Whether executing a complex fleet engagement, managing a
+              large-scale trade run, or coordinating critical logistics — HDI performs
+              with precision and purpose.
+            </p>
+            <p>
+              From the commerce lanes of ArcCorp to the contested reaches of deep space,
+              our members represent some of the most capable operators in the Verse.
+              We recruit for quality, not quantity.
+            </p>
+            <a href="about.html" class="btn btn-outline">
+              Full Profile <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <div>
+                <h3>Professionalism</h3>
+                <p>We operate with discipline, respect, and a commitment to excellence in
+                   every mission — from routine operations to high-stakes engagements.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <div>
+                <h3>Coordination</h3>
+                <p>Our strength is unity. Seamless communication and synchronized action
+                   across all fleet elements, at all times.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <i class="fas fa-crosshairs"></i>
+              </div>
+              <div>
+                <h3>Long-Term Vision</h3>
+                <p>We build infrastructure that lasts — growing capabilities, deepening
+                   relationships, and positioning HDI for enduring success.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         OPERATIONS
+    ══════════════════════════════════════════════════════ -->
+    <section id="operations" class="section operations-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">// OPERATIONS</span>
+          <h2 class="section-title">What We Do</h2>
+          <div class="title-decoration"></div>
+          <p class="section-desc">
+            HDI operates across the full spectrum of activities the Verse has to offer —
+            from the front lines to the supply lines.
+          </p>
+        </div>
+
+        <div class="ops-grid">
+          <div class="ops-card">
+            <div class="ops-number mono">01</div>
+            <div class="ops-icon" aria-hidden="true"><i class="fas fa-jet-fighter-up"></i></div>
+            <h3>Combat Operations</h3>
+            <p>Fleet engagements, escort missions, bounty hunting, and organized PvP. HDI
+               fights smart, fights coordinated, and fights to win.</p>
+            <ul class="ops-tags">
+              <li>Fleet Combat</li>
+              <li>Escort &amp; Security</li>
+              <li>Bounty Hunting</li>
+            </ul>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-number mono">02</div>
+            <div class="ops-icon" aria-hidden="true"><i class="fas fa-boxes-stacked"></i></div>
+            <h3>Enterprise &amp; Trade</h3>
+            <p>Large-scale cargo operations, commodity trading, mining ventures, and
+               economic intelligence. Opportunity in enterprise is our mandate.</p>
+            <ul class="ops-tags">
+              <li>Cargo Hauling</li>
+              <li>Commodity Trading</li>
+              <li>Mining</li>
+            </ul>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-number mono">03</div>
+            <div class="ops-icon" aria-hidden="true"><i class="fas fa-satellite-dish"></i></div>
+            <h3>Reconnaissance</h3>
+            <p>Intel gathering, pathfinding, deep-space scanning, and exploration for
+               strategic advantage. Knowledge is the ultimate force multiplier.</p>
+            <ul class="ops-tags">
+              <li>Intel &amp; Scanning</li>
+              <li>Exploration</li>
+              <li>Pathfinding</li>
+            </ul>
+          </div>
+
+          <div class="ops-card">
+            <div class="ops-number mono">04</div>
+            <div class="ops-icon" aria-hidden="true"><i class="fas fa-truck-fast"></i></div>
+            <h3>Logistics</h3>
+            <p>Supply chain coordination, refuelling operations, repair support, and
+               resource management. The backbone that keeps all operations moving.</p>
+            <ul class="ops-tags">
+              <li>Supply Chain</li>
+              <li>Fleet Support</li>
+              <li>Refuelling &amp; Repair</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         COMMUNITY
+    ══════════════════════════════════════════════════════ -->
+    <section id="community" class="section community-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">// COMMUNITY</span>
+          <h2 class="section-title">Join the Verse</h2>
+          <div class="title-decoration"></div>
+          <p class="section-desc">
+            Connect with Hyperion Defense Industries across every platform and be
+            part of our growing community.
+          </p>
+        </div>
+
+        <div class="social-grid">
+
+          <a href="https://discord.gg/hyperiondi" class="social-card discord"
+             target="_blank" rel="noopener noreferrer" data-animate>
+            <div class="social-icon" aria-hidden="true"><i class="fab fa-discord"></i></div>
+            <h3>Discord</h3>
+            <p>Our primary comms hub. Join the server for mission briefings, fleet
+               coordination, community events, and direct contact with leadership.</p>
+            <span class="social-action">Join Server <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="https://www.patreon.com/hyperiondefenseindustries" class="social-card patreon"
+             target="_blank" rel="noopener noreferrer" data-animate>
+            <div class="social-icon" aria-hidden="true"><i class="fab fa-patreon"></i></div>
+            <h3>Patreon</h3>
+            <p>Support HDI's growth and gain access to exclusive content, early
+               announcements, and special member benefits.</p>
+            <span class="social-action">Support Us <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="https://www.youtube.com/@hyperiondefenseindustries" class="social-card youtube"
+             target="_blank" rel="noopener noreferrer" data-animate>
+            <div class="social-icon" aria-hidden="true"><i class="fab fa-youtube"></i></div>
+            <h3>YouTube</h3>
+            <p>Operation footage, fleet highlights, tutorials, and cinematic content.
+               See HDI in action across the Verse.</p>
+            <span class="social-action">Watch Now <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="https://www.tiktok.com/@hyperiondefenseindustries" class="social-card tiktok"
+             target="_blank" rel="noopener noreferrer" data-animate>
+            <div class="social-icon" aria-hidden="true"><i class="fab fa-tiktok"></i></div>
+            <h3>TikTok</h3>
+            <p>Quick clips, combat highlights, and behind-the-scenes moments from
+               our daily operations.</p>
+            <span class="social-action">Follow Us <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="https://www.instagram.com/hyperiondefenseindustries" class="social-card instagram"
+             target="_blank" rel="noopener noreferrer" data-animate>
+            <div class="social-icon" aria-hidden="true"><i class="fab fa-instagram"></i></div>
+            <h3>Instagram</h3>
+            <p>Screenshots, in-universe art, and visual stories from across
+               the Star Citizen universe.</p>
+            <span class="social-action">Follow Us <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a href="https://robertsspaceindustries.com/orgs/HDI" class="social-card spectrum"
+             target="_blank" rel="noopener noreferrer" data-animate>
+            <div class="social-icon" aria-hidden="true">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>RSI Spectrum</h3>
+            <p>Find us on Roberts Space Industries — the official Star Citizen
+               community platform and org registry.</p>
+            <span class="social-action">View Profile <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">// CONTACT</span>
+          <h2 class="section-title">Establish Contact</h2>
+          <div class="title-decoration"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              Whether you're looking to join HDI, inquire about contracted services,
+              or establish an inter-org partnership — we want to hear from you.
+            </p>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:Hyperiondefenseindustries@gmail.com">
+                  Hyperiondefenseindustries@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-location-dot" aria-hidden="true"></i>
+              <div>
+                <span class="contact-label">Home Port</span>
+                <span>Area 18, ArcCorp</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-globe" aria-hidden="true"></i>
+              <div>
+                <span class="contact-label">System</span>
+                <span>Stanton, UEE Space</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fab fa-discord" aria-hidden="true"></i>
+              <div>
+                <span class="contact-label">Discord</span>
+                <a href="https://discord.gg/hyperiondi" target="_blank" rel="noopener">
+                  discord.gg/hyperiondi
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="org">Organization / Name</label>
+              <input type="text" id="org" name="org"
+                     placeholder="Your organization or callsign" autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="discord">Discord Handle</label>
+              <input type="text" id="discord" name="discord"
+                     placeholder="e.g. callsign#0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a subject…</option>
+                <option value="join">Join HDI</option>
+                <option value="services">Services Inquiry</option>
+                <option value="partnership">Inter-Org Partnership</option>
+                <option value="media">Media / Content</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"
+                        placeholder="Describe your request or inquiry…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Send Transmission
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo" aria-label="HDI Home">
+            <svg width="32" height="32" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5"
+                       stroke="#00c8e8" stroke-width="1.6" fill="rgba(0,200,232,0.07)"/>
+              <polygon points="20,9 29,14 29,26 20,31 11,26 11,14"
+                       stroke="#00c8e8" stroke-width="0.8" fill="none" opacity="0.45"/>
+              <text x="20" y="25" text-anchor="middle"
+                    fill="#00c8e8" font-family="Orbitron,sans-serif"
+                    font-size="13" font-weight="700" letter-spacing="1">H</text>
+            </svg>
+            <span>HYPERION <em>DEFENSE INDUSTRIES</em></span>
+          </a>
+          <p>Built on professionalism, coordination, and long-term vision. Strength in combat. Opportunity in enterprise.</p>
+          <div class="footer-social">
+            <a href="https://discord.gg/hyperiondi"  target="_blank" rel="noopener" aria-label="Discord">
+              <i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@hyperiondefenseindustries" target="_blank" rel="noopener" aria-label="YouTube">
+              <i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@hyperiondefenseindustries" target="_blank" rel="noopener" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/hyperiondefenseindustries" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i></a>
+            <a href="https://www.patreon.com/hyperiondefenseindustries" target="_blank" rel="noopener" aria-label="Patreon">
+              <i class="fab fa-patreon"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#operations">Operations</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="about.html">Full Profile</a></li>
+            <li><a href="#contact">Join HDI</a></li>
+            <li><a href="https://www.patreon.com/hyperiondefenseindustries" target="_blank" rel="noopener">Support Us</a></li>
+            <li><a href="https://robertsspaceindustries.com/orgs/HDI" target="_blank" rel="noopener">RSI Page</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info">
+          <h4>Location</h4>
+          <span class="mono">Area 18, ArcCorp<br>Stanton System<br>United Earth Empire</span>
+          <a href="mailto:Hyperiondefenseindustries@gmail.com" class="footer-email">
+            <i class="fas fa-envelope"></i>
+            Hyperiondefenseindustries@gmail.com
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2954 Hyperion Defense Industries. All rights reserved.</p>
+        <p>Star Citizen is a trademark of Cloud Imperium Games Corp.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
