@@ -278,6 +278,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .nav-mobile-overlay .nav-link:last-child { border-bottom: none; }
 
+/* --- HERO LOGO --- */
+.hero-logo {
+  width: clamp(260px, 38vw, 420px);
+  margin: 0 auto 32px;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 60px rgba(120, 8, 8, 0.75));
+}
+
 /* --- HERO --- */
 .hero {
   position: relative;
@@ -789,12 +803,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-align: center;
   overflow: hidden;
 }
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.page-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.28;
+  mix-blend-mode: screen;
+}
+
 .page-hero::before {
   content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(ellipse 80% 80% at 50% 0%, rgba(100, 8, 8, 0.18) 0%, transparent 65%);
+  position: absolute; inset: 0; z-index: 1;
+  background:
+    radial-gradient(ellipse 80% 80% at 50% 0%, rgba(100, 8, 8, 0.22) 0%, transparent 65%),
+    linear-gradient(to bottom, rgba(8,7,7,0.3) 0%, rgba(8,7,7,0.7) 80%, var(--bg-primary) 100%);
 }
-.page-hero-content { position: relative; z-index: 1; }
+.page-hero-content { position: relative; z-index: 2; }
 .page-hero h1 { font-size: clamp(32px, 5vw, 60px); letter-spacing: 0.08em; margin-bottom: 20px; }
 .page-hero p { font-size: clamp(15px, 2vw, 18px); color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
 
