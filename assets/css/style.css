@@ -291,6 +291,31 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   filter: drop-shadow(0 0 40px rgba(192, 24, 24, 0.6));
 }
 
+.hero-org-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 16px 0 0;
+}
+
+.hero-org-main {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.hero-org-sub {
+  font-family: var(--font-mono);
+  font-size: clamp(10px, 1.4vw, 14px);
+  letter-spacing: 0.35em;
+  color: var(--steel);
+  line-height: 1;
+}
+
 /* --- HERO --- */
 .hero {
   position: relative;
